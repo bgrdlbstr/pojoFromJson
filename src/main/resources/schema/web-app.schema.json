@@ -1,0 +1,503 @@
+
+
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "web-app": {
+      "$id": "/properties/web-app",
+      "type": "object",
+      "properties": {
+        "servlet": {
+          "$id": "/properties/web-app/properties/servlet",
+          "type": "array",
+          "items": {
+            "$id": "/properties/web-app/properties/servlet/items",
+            "type": "object",
+            "properties": {
+              "servlet-name": {
+                "$id": "/properties/web-app/properties/servlet/items/properties/servlet-name",
+                "type": "string",
+                "title": "The Servlet-name Schema ",
+                "default": "",
+                "examples": [
+                  "cofaxCDS"
+                ]
+              },
+              "servlet-class": {
+                "$id": "/properties/web-app/properties/servlet/items/properties/servlet-class",
+                "type": "string",
+                "title": "The Servlet-class Schema ",
+                "default": "",
+                "examples": [
+                  "org.cofax.cds.CDSServlet"
+                ]
+              },
+              "init-param": {
+                "$id": "/properties/web-app/properties/servlet/items/properties/init-param",
+                "type": "object",
+                "properties": {
+                  "configGlossary:installationAt": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/configGlossary:installationAt",
+                    "type": "string",
+                    "title": "The Configglossary:installationat Schema ",
+                    "default": "",
+                    "examples": [
+                      "Philadelphia, PA"
+                    ]
+                  },
+                  "configGlossary:adminEmail": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/configGlossary:adminEmail",
+                    "type": "string",
+                    "title": "The Configglossary:adminemail Schema ",
+                    "default": "",
+                    "examples": [
+                      "ksm@pobox.com"
+                    ]
+                  },
+                  "configGlossary:poweredBy": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/configGlossary:poweredBy",
+                    "type": "string",
+                    "title": "The Configglossary:poweredby Schema ",
+                    "default": "",
+                    "examples": [
+                      "Cofax"
+                    ]
+                  },
+                  "configGlossary:poweredByIcon": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/configGlossary:poweredByIcon",
+                    "type": "string",
+                    "title": "The Configglossary:poweredbyicon Schema ",
+                    "default": "",
+                    "examples": [
+                      "/images/cofax.gif"
+                    ]
+                  },
+                  "configGlossary:staticPath": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/configGlossary:staticPath",
+                    "type": "string",
+                    "title": "The Configglossary:staticpath Schema ",
+                    "default": "",
+                    "examples": [
+                      "/content/static"
+                    ]
+                  },
+                  "templateProcessorClass": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/templateProcessorClass",
+                    "type": "string",
+                    "title": "The Templateprocessorclass Schema ",
+                    "default": "",
+                    "examples": [
+                      "org.cofax.WysiwygTemplate"
+                    ]
+                  },
+                  "templateLoaderClass": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/templateLoaderClass",
+                    "type": "string",
+                    "title": "The Templateloaderclass Schema ",
+                    "default": "",
+                    "examples": [
+                      "org.cofax.FilesTemplateLoader"
+                    ]
+                  },
+                  "templatePath": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/templatePath",
+                    "type": "string",
+                    "title": "The Templatepath Schema ",
+                    "default": "",
+                    "examples": [
+                      "templates"
+                    ]
+                  },
+                  "templateOverridePath": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/templateOverridePath",
+                    "type": "string",
+                    "title": "The Templateoverridepath Schema ",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ]
+                  },
+                  "defaultListTemplate": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/defaultListTemplate",
+                    "type": "string",
+                    "title": "The Defaultlisttemplate Schema ",
+                    "default": "",
+                    "examples": [
+                      "listTemplate.htm"
+                    ]
+                  },
+                  "defaultFileTemplate": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/defaultFileTemplate",
+                    "type": "string",
+                    "title": "The Defaultfiletemplate Schema ",
+                    "default": "",
+                    "examples": [
+                      "articleTemplate.htm"
+                    ]
+                  },
+                  "useJSP": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/useJSP",
+                    "type": "boolean",
+                    "title": "The Usejsp Schema ",
+                    "default": false,
+                    "examples": [
+                      false
+                    ]
+                  },
+                  "jspListTemplate": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/jspListTemplate",
+                    "type": "string",
+                    "title": "The Jsplisttemplate Schema ",
+                    "default": "",
+                    "examples": [
+                      "listTemplate.jsp"
+                    ]
+                  },
+                  "jspFileTemplate": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/jspFileTemplate",
+                    "type": "string",
+                    "title": "The Jspfiletemplate Schema ",
+                    "default": "",
+                    "examples": [
+                      "articleTemplate.jsp"
+                    ]
+                  },
+                  "cachePackageTagsTrack": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/cachePackageTagsTrack",
+                    "type": "integer",
+                    "title": "The Cachepackagetagstrack Schema ",
+                    "default": 0,
+                    "examples": [
+                      200
+                    ]
+                  },
+                  "cachePackageTagsStore": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/cachePackageTagsStore",
+                    "type": "integer",
+                    "title": "The Cachepackagetagsstore Schema ",
+                    "default": 0,
+                    "examples": [
+                      200
+                    ]
+                  },
+                  "cachePackageTagsRefresh": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/cachePackageTagsRefresh",
+                    "type": "integer",
+                    "title": "The Cachepackagetagsrefresh Schema ",
+                    "default": 0,
+                    "examples": [
+                      60
+                    ]
+                  },
+                  "cacheTemplatesTrack": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/cacheTemplatesTrack",
+                    "type": "integer",
+                    "title": "The Cachetemplatestrack Schema ",
+                    "default": 0,
+                    "examples": [
+                      100
+                    ]
+                  },
+                  "cacheTemplatesStore": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/cacheTemplatesStore",
+                    "type": "integer",
+                    "title": "The Cachetemplatesstore Schema ",
+                    "default": 0,
+                    "examples": [
+                      50
+                    ]
+                  },
+                  "cacheTemplatesRefresh": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/cacheTemplatesRefresh",
+                    "type": "integer",
+                    "title": "The Cachetemplatesrefresh Schema ",
+                    "default": 0,
+                    "examples": [
+                      15
+                    ]
+                  },
+                  "cachePagesTrack": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/cachePagesTrack",
+                    "type": "integer",
+                    "title": "The Cachepagestrack Schema ",
+                    "default": 0,
+                    "examples": [
+                      200
+                    ]
+                  },
+                  "cachePagesStore": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/cachePagesStore",
+                    "type": "integer",
+                    "title": "The Cachepagesstore Schema ",
+                    "default": 0,
+                    "examples": [
+                      100
+                    ]
+                  },
+                  "cachePagesRefresh": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/cachePagesRefresh",
+                    "type": "integer",
+                    "title": "The Cachepagesrefresh Schema ",
+                    "default": 0,
+                    "examples": [
+                      10
+                    ]
+                  },
+                  "cachePagesDirtyRead": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/cachePagesDirtyRead",
+                    "type": "integer",
+                    "title": "The Cachepagesdirtyread Schema ",
+                    "default": 0,
+                    "examples": [
+                      10
+                    ]
+                  },
+                  "searchEngineListTemplate": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/searchEngineListTemplate",
+                    "type": "string",
+                    "title": "The Searchenginelisttemplate Schema ",
+                    "default": "",
+                    "examples": [
+                      "forSearchEnginesList.htm"
+                    ]
+                  },
+                  "searchEngineFileTemplate": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/searchEngineFileTemplate",
+                    "type": "string",
+                    "title": "The Searchenginefiletemplate Schema ",
+                    "default": "",
+                    "examples": [
+                      "forSearchEngines.htm"
+                    ]
+                  },
+                  "searchEngineRobotsDb": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/searchEngineRobotsDb",
+                    "type": "string",
+                    "title": "The Searchenginerobotsdb Schema ",
+                    "default": "",
+                    "examples": [
+                      "WEB-INF/robots.db"
+                    ]
+                  },
+                  "useDataStore": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/useDataStore",
+                    "type": "boolean",
+                    "title": "The Usedatastore Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "dataStoreClass": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/dataStoreClass",
+                    "type": "string",
+                    "title": "The Datastoreclass Schema ",
+                    "default": "",
+                    "examples": [
+                      "org.cofax.SqlDataStore"
+                    ]
+                  },
+                  "redirectionClass": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/redirectionClass",
+                    "type": "string",
+                    "title": "The Redirectionclass Schema ",
+                    "default": "",
+                    "examples": [
+                      "org.cofax.SqlRedirection"
+                    ]
+                  },
+                  "dataStoreName": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/dataStoreName",
+                    "type": "string",
+                    "title": "The Datastorename Schema ",
+                    "default": "",
+                    "examples": [
+                      "cofax"
+                    ]
+                  },
+                  "dataStoreDriver": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/dataStoreDriver",
+                    "type": "string",
+                    "title": "The Datastoredriver Schema ",
+                    "default": "",
+                    "examples": [
+                      "com.microsoft.jdbc.sqlserver.SQLServerDriver"
+                    ]
+                  },
+                  "dataStoreUrl": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/dataStoreUrl",
+                    "type": "string",
+                    "title": "The Datastoreurl Schema ",
+                    "default": "",
+                    "examples": [
+                      "jdbc:microsoft:sqlserver://LOCALHOST:1433;DatabaseName=goon"
+                    ]
+                  },
+                  "dataStoreUser": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/dataStoreUser",
+                    "type": "string",
+                    "title": "The Datastoreuser Schema ",
+                    "default": "",
+                    "examples": [
+                      "sa"
+                    ]
+                  },
+                  "dataStorePassword": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/dataStorePassword",
+                    "type": "string",
+                    "title": "The Datastorepassword Schema ",
+                    "default": "",
+                    "examples": [
+                      "dataStoreTestQuery"
+                    ]
+                  },
+                  "dataStoreTestQuery": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/dataStoreTestQuery",
+                    "type": "string",
+                    "title": "The Datastoretestquery Schema ",
+                    "default": "",
+                    "examples": [
+                      "SET NOCOUNT ON;select test='test';"
+                    ]
+                  },
+                  "dataStoreLogFile": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/dataStoreLogFile",
+                    "type": "string",
+                    "title": "The Datastorelogfile Schema ",
+                    "default": "",
+                    "examples": [
+                      "/usr/local/tomcat/logs/datastore.log"
+                    ]
+                  },
+                  "dataStoreInitConns": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/dataStoreInitConns",
+                    "type": "integer",
+                    "title": "The Datastoreinitconns Schema ",
+                    "default": 0,
+                    "examples": [
+                      10
+                    ]
+                  },
+                  "dataStoreMaxConns": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/dataStoreMaxConns",
+                    "type": "integer",
+                    "title": "The Datastoremaxconns Schema ",
+                    "default": 0,
+                    "examples": [
+                      100
+                    ]
+                  },
+                  "dataStoreConnUsageLimit": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/dataStoreConnUsageLimit",
+                    "type": "integer",
+                    "title": "The Datastoreconnusagelimit Schema ",
+                    "default": 0,
+                    "examples": [
+                      100
+                    ]
+                  },
+                  "dataStoreLogLevel": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/dataStoreLogLevel",
+                    "type": "string",
+                    "title": "The Datastoreloglevel Schema ",
+                    "default": "",
+                    "examples": [
+                      "debug"
+                    ]
+                  },
+                  "maxUrlLength": {
+                    "$id": "/properties/web-app/properties/servlet/items/properties/init-param/properties/maxUrlLength",
+                    "type": "integer",
+                    "title": "The Maxurllength Schema ",
+                    "default": 0,
+                    "examples": [
+                      500
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "servlet-mapping": {
+          "$id": "/properties/web-app/properties/servlet-mapping",
+          "type": "object",
+          "properties": {
+            "cofaxCDS": {
+              "$id": "/properties/web-app/properties/servlet-mapping/properties/cofaxCDS",
+              "type": "string",
+              "title": "The Cofaxcds Schema ",
+              "default": "",
+              "examples": [
+                "/"
+              ]
+            },
+            "cofaxEmail": {
+              "$id": "/properties/web-app/properties/servlet-mapping/properties/cofaxEmail",
+              "type": "string",
+              "title": "The Cofaxemail Schema ",
+              "default": "",
+              "examples": [
+                "/cofaxutil/aemail/*"
+              ]
+            },
+            "cofaxAdmin": {
+              "$id": "/properties/web-app/properties/servlet-mapping/properties/cofaxAdmin",
+              "type": "string",
+              "title": "The Cofaxadmin Schema ",
+              "default": "",
+              "examples": [
+                "/admin/*"
+              ]
+            },
+            "fileServlet": {
+              "$id": "/properties/web-app/properties/servlet-mapping/properties/fileServlet",
+              "type": "string",
+              "title": "The Fileservlet Schema ",
+              "default": "",
+              "examples": [
+                "/static/*"
+              ]
+            },
+            "cofaxTools": {
+              "$id": "/properties/web-app/properties/servlet-mapping/properties/cofaxTools",
+              "type": "string",
+              "title": "The Cofaxtools Schema ",
+              "default": "",
+              "examples": [
+                "/tools/*"
+              ]
+            }
+          }
+        },
+        "taglib": {
+          "$id": "/properties/web-app/properties/taglib",
+          "type": "object",
+          "properties": {
+            "taglib-uri": {
+              "$id": "/properties/web-app/properties/taglib/properties/taglib-uri",
+              "type": "string",
+              "title": "The Taglib-uri Schema ",
+              "default": "",
+              "examples": [
+                "cofax.tld"
+              ]
+            },
+            "taglib-location": {
+              "$id": "/properties/web-app/properties/taglib/properties/taglib-location",
+              "type": "string",
+              "title": "The Taglib-location Schema ",
+              "default": "",
+              "examples": [
+                "/WEB-INF/tlds/cofax.tld"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
